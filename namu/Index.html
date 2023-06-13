@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./content.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+   
+    <style>
+        *{
+            /* 전체 테두리0 */
+            margin:0px;
+            padding:0px;
+        }
+        a{
+            /* a태그 밑줄 없애고 색깔 변경 */
+            text-decoration: none;
+            color:#66f;
+        }
+        li{
+            /* li태그 점 없애기 */
+            list-style-type: none;
+        }
+        body{
+            /* 전체 배경화면 header엔 초록색 article,aside,footer엔 하얀색 */
+            background-color: #eee;
+        }
+        html{
+            /* 전체창시 가로스크롤생기는거 없애기 다만, 전체width가 작아지면 생기게 */
+            overflow-x:hidden;
+        }
+        @media screen and (max-width:1324px){
+            html{
+            overflow-x:auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+</body>
+    <!--나무 위키 : https://namu.wiki/-->
+    <header>
+        <div id="green">
+            <div id="header_wrap">
+                <ul id="menu">
+                    <li id="logo"><a href="/">
+                        <img src="https://i.namu.wiki/i/UJFMgOHdDYYWU0G1YPWJledJOuZIAGS4-W7lDIigFS7fIUTz19f4ujWASyITewLsDLCtV22O2bi62tUNPbTDxg.svg">
+                        <div>나무위키</div>
+                    </a></li>
+                    <li id="menu_recent_chg"><a href="/">
+                        <img src="https://i.namu.wiki/i/vuykPnr_iWOgJZseINP6f5jALVzw4cyWT2hqOEfk7Lfh-xHXBiwAHEllB4YMWwob-KexSuKA1VNX1zJoZBztoA.svg">
+                        <div>최근 변경</div>
+                    </a></li>
+                    <li id="menu_recent_disc"><a href="/">
+                        <img src="https://i.namu.wiki/i/WvGUiPm3Qweys5TeF11ahHmFbIIekwjNJgkel3RzfYq6jBrQreS-OYzNn2mB6T5XG4e2lSV9dyJzQYf8VZdxqw.svg">
+                        <div>최근 토론
+                        </div>
+                    </a></li>
+                    <li id="menu_special_set"><a href="/">
+                        <img src="https://i.namu.wiki/i/Hd9uR6hVjMiTDHs16K7vHE4dWndEqHtkzSXP647jGOilJzwTKbNl2Lpm4vB6OVm5fG2mhPJTupfVSgEDmAT4jg.svg">
+                        <div>특수기능</div>
+                    </a></li>
+                </ul>
+    
+                <ul id="user_box">
+                    <li>
+                        <img src="https://i.namu.wiki/i/shOAM-Jab_b2YyZZrqrTbJNjxedUvCVeioT564LnKLJK2BlSd5TsqLQWjl5yc66yadRXV96U_hItxZTEAzIJyA.svg">
+                    </li>
+                </ul>
+            </div>
+        </div>
+       
+        <form id="input_box">
+            <div class="input-group">
+                <!-- 이미지 추가해야됨 -->
+                <!-- 얘는 따로 hover설정하는 방법을 잘 모르겠음... -->
+                <button class="btn btn-outline-secondary bg-light" type="button">랜</button>
+                <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
+                <button class="btn btn-outline-secondary bg-light" type="button">찾</button>
+                <button class="btn btn-outline-secondary bg-light" type="button">검</button>
+            </div>
+        </form>
+    </header>
+
+    <div id="content">
+        <article>
+            <div class="doc_nav">
+                <ul>
+                    <li>즐겨찾기<z/li>
+                    <li>역링크</li>
+                    <li>토론</li>
+                    <li>편집</li>
+                    <li>역사</li>
+                    <li>ACL</li>
+                </ul>
+            </div>
+            <h1>나무위키:대문</h1>
+            <div class="fixed_time">최근 수정 시각: 2023-06-06 19:31:46</div>
+            <div class="top_ad">
+                <img src="./images/12090460248530341630.jpg">
+            </div>
+            <div class="classfication">분류: <a href="#">나무위키</a></div>
+            <div class = "doc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt cumque repudiandae cum! Nemo magnam asperiores modi. Quod laudantium eveniet odio. Fugiat tempora tempore delectus expedita, animi aut rerum numquam quam!
+                Aspernatur ut voluptatem deleniti? Quaerat tempora numquam incidunt nihil corrupti? Optio suscipit ad harum eveniet corporis placeat exercitationem amet molestiae repellendus voluptate! Magni quasi quidem sapiente ut vero architecto optio!
+                Architecto, accusantium. Reiciendis ipsam assumenda eum dolore harum? Doloribus voluptate facere possimus amet omnis totam, porro consequatur. Mollitia delectus, dolorem rem, optio in nulla itaque ipsam soluta pariatur quos adipisci.
+                Explicabo iure quos cumque officiis eum nesciunt voluptatum quae sed veritatis autem! Amet quod facere harum? Nulla eum quisquam deserunt fugit doloribus tempora ab? Illum provident aperiam incidunt cupiditate enim.
+                A quos tenetur dicta magni perspiciatis. Voluptatem, cumque amet, deserunt sapiente velit quos, voluptate ad culpa minus alias sequi quo doloremque perferendis repellendus molestiae aspernatur. Error libero dignissimos impedit animi.
+            </div>
+            <div class = "doc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt cumque repudiandae cum! Nemo magnam asperiores modi. Quod laudantium eveniet odio. Fugiat tempora tempore delectus expedita, animi aut rerum numquam quam!
+                Aspernatur ut voluptatem deleniti? Quaerat tempora numquam incidunt nihil corrupti? Optio suscipit ad harum eveniet corporis placeat exercitationem amet molestiae repellendus voluptate! Magni quasi quidem sapiente ut vero architecto optio!
+                Architecto, accusantium. Reiciendis ipsam assumenda eum dolore harum? Doloribus voluptate facere possimus amet omnis totam, porro consequatur. Mollitia delectus, dolorem rem, optio in nulla itaque ipsam soluta pariatur quos adipisci.
+                Explicabo iure quos cumque officiis eum nesciunt voluptatum quae sed veritatis autem! Amet quod facere harum? Nulla eum quisquam deserunt fugit doloribus tempora ab? Illum provident aperiam incidunt cupiditate enim.
+                A quos tenetur dicta magni perspiciatis. Voluptatem, cumque amet, deserunt sapiente velit quos, voluptate ad culpa minus alias sequi quo doloremque perferendis repellendus molestiae aspernatur. Error libero dignissimos impedit animi.
+            </div>
+            <div class = "doc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt cumque repudiandae cum! Nemo magnam asperiores modi. Quod laudantium eveniet odio. Fugiat tempora tempore delectus expedita, animi aut rerum numquam quam!
+                Aspernatur ut voluptatem deleniti? Quaerat tempora numquam incidunt nihil corrupti? Optio suscipit ad harum eveniet corporis placeat exercitationem amet molestiae repellendus voluptate! Magni quasi quidem sapiente ut vero architecto optio!
+                Architecto, accusantium. Reiciendis ipsam assumenda eum dolore harum? Doloribus voluptate facere possimus amet omnis totam, porro consequatur. Mollitia delectus, dolorem rem, optio in nulla itaque ipsam soluta pariatur quos adipisci.
+                Explicabo iure quos cumque officiis eum nesciunt voluptatum quae sed veritatis autem! Amet quod facere harum? Nulla eum quisquam deserunt fugit doloribus tempora ab? Illum provident aperiam incidunt cupiditate enim.
+                A quos tenetur dicta magni perspiciatis. Voluptatem, cumque amet, deserunt sapiente velit quos, voluptate ad culpa minus alias sequi quo doloremque perferendis repellendus molestiae aspernatur. Error libero dignissimos impedit animi.
+            </div>
+        </article>
+        <div id="aside">
+            <ul id="recent_changed">
+                <li>최근변경</li>
+                <li>
+                    <a href="#">Lorem ipsum dolor</a>
+                    <div>17:48</div>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor</a>
+                    <div>17:48</div>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor</a>
+                    <div>17:48</div>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor</a>
+                    <div>17:48</div>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor</a>
+                    <div>17:48</div>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor</a>
+                    <div>17:48</div>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor</a>
+                    <div>17:48</div>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor</a>
+                    <div>17:48</div>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor</a>
+                    <div>17:48</div>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor</a>
+                    <div>17:48</div>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor</a>
+                    <div>17:48</div>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor</a>
+                    <div>17:48</div>
+                </li>
+                <li>
+                    <a href="#">[더보기]</a>
+                </li>
+            </ul>
+            <div id="aside_ad">
+                <img src="./images/화면 캡처 2023-06-07 165458.png">
+            </div>
+            <ul id="namu_news">
+                <li>나무뉴스</li>
+                <li>
+                    <a href="#">Lorem ipsum dolor Lorem ipsum dolor</a>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor Lorem ipsum dolor</a>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor Lorem ipsum dolor</a>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor Lorem ipsum dolor</a>
+                </li>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor Lorem ipsum dolor</a>
+                </li>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor Lorem ipsum dolor</a>
+                </li>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor Lorem ipsum dolor</a>
+                </li>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor Lorem ipsum dolor</a>
+                </li>
+                </li>
+                <li>
+                    <a href="#">[더보기]</a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+    <footer>
+        <div id="office">
+            <ul id="logos">
+                <li>
+                    <img src="data:image/svg+xml;base64,CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDIzLjA5IDI1LjcyMSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIxMS44MjciIHkxPSIyNzUuNTg5IiB4Mj0iLTQuOTU1IiB5Mj0iMjU4LjgwNyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLCAwLCAwLCAtMSwgMCwgMjc3LjE1OSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwMGEwZmYiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjAuMDA3IiBzdG9wLWNvbG9yPSIjMDBhMWZmIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIwLjI2IiBzdG9wLWNvbG9yPSIjMDBiZWZmIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIwLjUxMiIgc3RvcC1jb2xvcj0iIzAwZDJmZiI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMC43NiIgc3RvcC1jb2xvcj0iIzAwZGZmZiI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZTNmZiI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQtMiIgeDE9IjIzLjg2MiIgeTE9IjI2NC4yOTgiIHgyPSItMC4zMzUiIHkyPSIyNjQuMjk4IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIC0xLCAwLCAyNzcuMTU5KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZTAwMCI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMC40MDkiIHN0b3AtY29sb3I9IiNmZmJkMDAiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjAuNzc1IiBzdG9wLWNvbG9yPSJvcmFuZ2UiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZjljMDAiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50LTMiIHgxPSIxNC44NTQiIHkxPSIyNjIuMDAzIiB4Mj0iLTcuOTA0IiB5Mj0iMjM5LjI0NSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLCAwLCAwLCAtMSwgMCwgMjc3LjE1OSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZjNhNDQiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNjMzExNjIiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50LTQiIHgxPSItMi42NzUiIHkxPSIyODQuMTIzIiB4Mj0iNy40ODciIHkyPSIyNzMuOTYxIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIC0xLCAwLCAyNzcuMTU5KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzMyYTA3MSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMC4wNjkiIHN0b3AtY29sb3I9IiMyZGE3NzEiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjAuNDc2IiBzdG9wLWNvbG9yPSIjMTVjZjc0Ij48L3N0b3A+PHN0b3Agb2Zmc2V0PSIwLjgwMSIgc3RvcC1jb2xvcj0iIzA2ZTc3NSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZjA3NiI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIGlkPSJMYXllcl8yIj48ZyBpZD0iTGF5ZXJfMS0yIj48cGF0aCBkPSJNLjQ2My40QTIsMiwwLDAsMCwwLDEuOFYyMy45MTlhMiwyLDAsMCwwLC40NjMsMS40bC4wNzQuMDczTDEyLjkyNiwxMy4wMDd2LS4yOTNMLjUzNy4zMjVaIiBzdHlsZT0iZmlsbDp1cmwoI2xpbmVhci1ncmFkaWVudCkiPjwvcGF0aD48cGF0aCBkPSJNMTcuMDU1LDE3LjEzOGwtNC4xMjktNC4xMzF2LS4yOTNsNC4xMy00LjEzLjA5My4wNTMsNC44OTMsMi43OGMxLjQuNzk0LDEuNCwyLjA5MywwLDIuODg4bC00Ljg5MywyLjc4WiIgc3R5bGU9ImZpbGw6dXJsKCNsaW5lYXItZ3JhZGllbnQtMikiPjwvcGF0aD48cGF0aCBkPSJNMTcuMTQ5LDE3LjA4NGwtNC4yMjMtNC4yMjNMLjQ2MywyNS4zMjNhMS42MjYsMS42MjYsMCwwLDAsMi4wNzguMDYybDE0LjYwOC04LjMiIHN0eWxlPSJmaWxsOnVybCgjbGluZWFyLWdyYWRpZW50LTMpIj48L3BhdGg+PHBhdGggZD0iTTE3LjE0OSw4LjYzNywyLjU0MS4zMzZBMS42MjYsMS42MjYsMCwwLDAsLjQ2My40TDEyLjkyNiwxMi44NjFaIiBzdHlsZT0iZmlsbDp1cmwoI2xpbmVhci1ncmFkaWVudC00KSI+PC9wYXRoPjxwYXRoIGQ9Ik0xNy4wNTYsMTYuOTkxLDIuNTQxLDI1LjIzOWExLjY2NiwxLjY2NiwwLDAsMS0yLC4wMWgwbC0uMDc0LjA3NWgwbC4wNzQuMDcyaDBhMS42NjcsMS42NjcsMCwwLDAsMi0uMDExbDE0LjYwOC04LjNaIiBzdHlsZT0ib3BhY2l0eTowLjI7aXNvbGF0aW9uOmlzb2xhdGUiPjwvcGF0aD48cGF0aCBkPSJNLjQ2MywyNS4xNzhBMiwyLDAsMCwxLDAsMjMuNzczdi4xNDZhMiwyLDAsMCwwLC40NjMsMS40MDVsLjA3NC0uMDc1WiIgc3R5bGU9Im9wYWNpdHk6MC4xMjtpc29sYXRpb246aXNvbGF0ZSI+PC9wYXRoPjxwYXRoIGQ9Ik0yMi4wNDIsMTQuMTU4bC00Ljk4NiwyLjgzMy4wOTMuMDkzLDQuODkzLTIuNzhhMS43NTMsMS43NTMsMCwwLDAsMS4wNDgtMS40NDNoMEExLjg2MSwxLjg2MSwwLDAsMSwyMi4wNDIsMTQuMTU4WiIgc3R5bGU9Im9wYWNpdHk6MC4xMjtpc29sYXRpb246aXNvbGF0ZSI+PC9wYXRoPjxwYXRoIGQ9Ik0yLjU0MS40ODNsMTkuNSwxMS4wOGExLjg2MSwxLjg2MSwwLDAsMSwxLjA0OCwxLjNoMGExLjc1MSwxLjc1MSwwLDAsMC0xLjA0OC0xLjQ0NEwyLjU0MS4zMzdDMS4xNDMtLjQ1NywwLC4yLDAsMS44di4xNDZDMCwuMzQ4LDEuMTQzLS4zMTEsMi41NDEuNDgzWiIgc3R5bGU9ImZpbGw6I2ZmZjtvcGFjaXR5OjAuMjU7aXNvbGF0aW9uOmlzb2xhdGUiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPgo=">
+                </li>
+                <li>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgODAwLjEgODAwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjE1Ny42ODgiIHkxPSI1ODIuMTczIiB4Mj0iMTU3LjY4OCIgeTI9IjEzODIuMTczIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDI0Mi4zNjIgLTU4Mi4xNzMpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMThiZmZiIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjA3MmYzIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGcgaWQ9IkxheWVyXzIiPjxnIGlkPSJMYXllcl8xLTIiPjxwYXRoIGQ9Ik02MzguNCwwSDE2MS42QTE2MS41MzUsMTYxLjUzNSwwLDAsMCwwLDE2MS42VjYzOC41QTE2MS41MTQsMTYxLjUxNCwwLDAsMCwxNjEuNiw4MDBINjM4LjVBMTYxLjYsMTYxLjYsMCwwLDAsODAwLjEsNjM4LjRWMTYxLjZBMTYxLjY4NCwxNjEuNjg0LDAsMCwwLDYzOC40LDBaIiBzdHlsZT0iZmlsbDp1cmwoI2xpbmVhci1ncmFkaWVudCkiPjwvcGF0aD48cGF0aCBkPSJNMzk2LjYsMTgzLjhsMTYuMi0yOEEzNi40NjYsMzYuNDY2LDAsMSwxLDQ3NiwxOTIuMkwzMTkuOSw0NjIuNEg0MzIuOGMzNi42LDAsNTcuMSw0Myw0MS4yLDcyLjhIMTQzYTM2LjQsMzYuNCwwLDEsMSwwLTcyLjhoOTIuOEwzNTQuNiwyNTYuNWwtMzcuMS02NC40YTM2LjQ2NiwzNi40NjYsMCwwLDEsNjMuMi0zNi40bDE1LjksMjguMVpNMjU2LjIsNTcyLjdsLTM1LDYwLjdBMzYuNDY2LDM2LjQ2NiwwLDAsMSwxNTgsNTk3bDI2LTQ1YzI5LjQtOS4xLDUzLjMtMi4xLDcyLjIsMjAuN1pNNTU3LjYsNDYyLjZoOTQuN2EzNi40LDM2LjQsMCwxLDEsMCw3Mi44SDU5OS43TDYzNS4yLDU5N0EzNi40NjYsMzYuNDY2LDAsMCwxLDU3Miw2MzMuNHEtODkuNy0xNTUuNTUtMTM0LjUtMjMzQzQwNywzNDcuOCw0MjguOCwyOTUsNDUwLjMsMjc3LjFxMzUuODUsNjEuNSwxMDcuMywxODUuNVoiIHN0eWxlPSJmaWxsOiNmZmYiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPgo=">
+                </li>
+            </ul>
+            <ul id="footer1">
+                <li>namu.wiki</li>
+                <li>Contáctenos</li>
+                <li>Términos de uso</li>
+                <li>Operado por umanle S.R.L.</li>
+                <li>Hecho con &lt;3 en Asunción, República del Paraguay</li>
+            </ul>
+            <ul id="footer2">
+                <li>Su zona horaria es Asia/Seoul</li>
+                <li>Impulsado por the seed engine</li>
+            </ul>
+            <div id="footer3">
+                This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+            </div>
+            <div id="footer4">
+                This site is protected by hCaptcha and its Privacy Policy and Terms of Service apply.
+            </div>
+        </div>
+        <!--부트스태렙을 사용했는데, 색을바꿀수 없어서 인라인을 주었다. 해결할것 -->
+        <div class="btn-group me-2" role="group" aria-label="First group" id = bot_btn>
+            <button type="button" class="btn btn-primary"
+            style="background-color: #008275;
+            position: fixed; right:6rem; bottom:0rem">1</button>
+            <button type="button" class="btn btn-primary"
+            style="background-color: #008275;
+            position: fixed; right:4rem; bottom:0rem">2</button>
+            <button type="button" class="btn btn-primary"
+            style="background-color: #008275;
+            position: fixed; right:2rem; bottom:0rem">3</button>
+        </div>
+    </footer>
+</body>
+</html>

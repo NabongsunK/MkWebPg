@@ -1,0 +1,133 @@
+header ul{
+    padding:0
+}
+
+header{
+    /* 헤더는 width전체를 덮게 */
+    /* 이때 height안주면 전체적으로 내려감 */
+    height:42px;
+    width:100vw;
+    color: white;
+}
+header a{
+    /* 헤더의 a태그에는 하얀색으로 */
+    color:white;
+    text-decoration: none;
+}
+#green{
+    /* serch_box를 포함안함 */
+    background-color: #008275;
+    width:100vw;
+}
+
+#header_wrap{
+    /* menu와 user를 양쪽끝에 배치하고, 크기를 고정해 화면클때는 중앙에 배치하고, 그외에는 전체를 덮게 */
+    margin:0px auto;
+    height:42px;
+    border:px solid red;
+    width:1324px;
+    display:grid;
+    justify-content: space-between;
+    grid-template-columns: 500px auto 30px;
+    grid-template-areas: 
+        "menu_ . user_box "
+    ;
+}
+
+#menu{
+    /* header의 왼쪽 */
+    border:px solid red;
+    display:flex;
+    grid-area:menu_
+}
+#menu>li{
+    border:px solid yellow;
+}
+#menu>li a{
+    border:px solid yellow;
+    font-size:1.0rem;
+    
+    /* 여기 패딩을 더주게되면 글자가 내려감.. hover했을때 경계선을 자연스럽게 잡기위해 설정함 */
+    padding-left:7px;
+    padding-right:7px;
+
+    height:42px;
+    line-height:42px;
+    display:flex;
+    align-items: center;
+}
+/* 로고는 커서를가져다 대도 색이 안바뀌게 */
+#menu>#logo a:hover{
+    color:white
+}
+/* 나머지는 배경색만 조금 연하게 */
+#menu>li[id*="menu"] a:hover{
+    background-color: #109285;
+    color:white
+}
+#menu>li img{
+    height:20px;
+}
+#menu>li div{
+    border:px solid red;
+    margin-left:10px
+}
+
+#user_box{
+    border:px solid blue;
+    grid-area:user_box;
+    margin-left: -50px;
+    width:42px;
+    /* 호버했을때 범위를 자연스럽게 */
+    padding:5px;
+}
+/* 배경색 조금 연하게 */
+#user_box:hover{
+    background-color: #109285;
+}
+#user_box img{
+    /* background-color: blue; */
+    height:30px;
+    width:30px;
+}
+
+/* 이거 위치를 고정해서 크기가 바뀔때마다 위치가 바뀜 */
+#input_box{
+    position:relative;
+    top:-40px;
+    left:59vw;
+    width:400px;
+}
+
+
+@media screen and (max-width:1324px){
+    /* 이떄부터는 header_wrap이 화면을 꽉차게 하고, input박스를 조금 왼쪽으로 */
+    #header_wrap{
+        width:100vw;
+    }
+    #input_box{
+        left:53vw;
+    }
+}
+
+@media screen and (max-width:1024px){
+    /* 이때부터는 서치창이 아래로가고 article이 전체 차지 main아래 aside가 나타나고 토론부분이 위로가게*/
+    /* 그런데, article이 정중앙에 않있음 */
+    #input_box{
+        position:static;
+        width:98vw;
+    }
+    #header_wrap{
+        width: 100vw;
+    }
+}
+@media screen and (max-width:768px){
+    /* 이때부터는 menu에 logo만 빼고 글씨를 없애기*/
+    #input_box{
+        width:97vw;
+    }
+    #menu>li[id *="menu"] a{
+        font-size:0rem;
+    }
+    
+}

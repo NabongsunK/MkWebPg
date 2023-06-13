@@ -1,0 +1,179 @@
+#content{
+    /* grid-area:content; */
+    /* header랑 마찬가지로 넓을땐 고정값으로 중앙고정 */
+    border:px solid;
+    width:1324px;
+    margin:0 auto;
+    display:flex;
+    /* background-color: yellow; */
+}
+#content a{
+    text-decoration: none;
+}
+article{
+    background-color: #fff;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+article .doc_nav{
+    /* article기준으로 오른쪽으로 */
+    float:right;
+    margin-right:1.8rem;
+    margin-top:1.4rem;
+}
+
+article .doc_nav>ul{
+    border:0px solid;
+    display:flex;
+    flex-direction:row
+}
+article .doc_nav li{
+    /* 표 내부 공간 확보 */
+    padding:.2rem .8rem .2rem .8rem;
+    border:1px solid #ccc;
+}
+article h1{
+    font-size:2.2rem;
+    margin:1.2rem;
+    font-weight: 900;
+}
+
+article .fixed_time{
+    float:right;
+    font-size:.9rem;
+    margin-right:1.8rem;
+    margin-top:-1rem;
+}
+
+article .top_ad{
+    /* background-color: yellow; */
+    /* 안의 img는 어떠한 경우에서도 center 확보 */
+    margin-top:4rem;
+    display:flex;
+    justify-content: center;
+}
+
+
+/* 마진을 줘서 양옆의 공간 확보 */
+article .classfication{
+    border: 1px solid #ccc;
+    margin: 2rem;
+    padding:.1rem;
+    padding-left:.8rem;
+}
+
+article .doc{
+    border-top: 1px solid #ccc;
+    margin:2rem;
+}
+
+
+#aside{
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-top:1vh;
+    margin-left:1vw;
+    margin-right:1vw;
+}
+
+/* 클때는 크기를 고정하고, 작아져서 내려갈때는 화면 꽉차게 */
+#aside>ul,#aside>div{
+    background-color: white;
+    padding: 0px;
+    margin:0px;
+    width:275px;
+}
+#aside>ul{
+    border:1px solid #ccc;
+}
+
+/* 클때는 오른쪽에 aside 기준 중앙정렬로 */
+#aside_ad{
+    margin:0 auto;
+}
+/* 내부공간확보 다만 글자가 길때 1줄인데, 가져가면 길어져야됨 */
+#aside li{
+    font-size: .9rem;
+    border:1px solid #ccc;
+    padding:3.5px;
+    padding-left:5px;
+    padding-right:5px;
+    
+}
+/* 첫번째와 말번째는 크기가 좀크게 */
+#aside li:nth-child(1){
+    font:bolder;
+    font-size:1.2rem;
+    padding:13px;
+    padding-left:15px;
+    padding-bottom:20px;
+}
+#aside li:nth-last-child(1){
+    text-align: right;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+/* 2번째부터 말전번째까지는 가져갔을때 배경색바꾸기 */
+#aside li:nth-child(n+2):hover{
+    background-color: #f9f9f9;
+}#aside li:nth-last-child(1):hover{
+    background-color: #fff;
+}
+
+#aside li div{
+    float:right;
+}
+#aside #aside_ad{
+    margin-top:20px;
+    margin-bottom: 20px;
+} 
+
+@media screen and (max-width:1324px){
+    /* 크기가 줄면 article만 반응해 줄어들고 content는 이떄부터 화면 꽉차게 */
+    article{
+        width:70vw;
+    }
+    #content{
+        width:100vw;
+    }
+    
+    
+}
+
+@media screen and (max-width:1024px){
+    /* aside 내려가서 길어지고, article이 화면 꽉차게, aside광고는 삭제 doc_nav는 올라가게 */
+    article{
+        width:100vw;
+    }
+    #content{
+        width:100vw;
+        flex-direction: column;
+    }
+    #aside{
+        margin:0px;
+    }
+    #aside>ul{
+        margin:0 auto;
+        width:92vw;
+        border:0px solid #ccc;
+    }
+    #aside img{
+        width:0px;
+    }
+    #aside li{
+        margin-left:10px;
+    }
+    article .doc_nav{
+        float:right;
+        margin-right:17px;
+        margin-top:0px;
+    }
+    article h1{
+        font-size:2rem;
+        margin-top:5vh;
+    }
+    
+}

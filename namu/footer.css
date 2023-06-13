@@ -1,0 +1,54 @@
+footer{
+    /* footer는 글자가 한방향으로만 배치되기떄문에 footer에서는 순서대로 나열하고, ul에서만 flex로 */
+    background-color: white;
+    border:1px solid #ccc;
+    padding-bottom: 30px;
+    /* 아래 공간확보 */
+}
+footer #logos img{
+    width: 30px;
+}
+footer{
+    display:flex;
+    justify-content: center;
+}
+#office{
+    flex-direction: column;
+}
+
+footer ul,
+footer div[id *="footer"]{
+    width: 100vw;
+    border: px solid;
+    text-align : center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+footer li{
+    border-left:1px solid #ccc;
+    padding-left:2rem;
+    padding-right:2rem;
+}
+footer li:nth-child(1){
+    border-left:0px;
+}
+#office > #logos{
+    margin-top:2rem;
+}
+#office > #footer1{
+    margin-top:1.5rem;
+    font-size: .9rem;
+}
+#office > #footer2{
+    margin-top:1.2rem;
+    font-size: .8rem;
+}
+#office > #footer3{
+    margin-top:1rem;
+    font-size: .5rem;
+}
+#office > #footer4{
+    font-size: .5rem;
+}
